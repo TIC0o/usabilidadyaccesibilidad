@@ -1,0 +1,578 @@
+<!doctype html>
+<html lang="es-CO" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <meta name="description" content="Sonrisa Vital: clínica odontológica accesible, moderna y centrada en el paciente. Agenda valoración, consulta tratamientos y conoce nuestro compromiso de accesibilidad.">
+  <meta name="theme-color" content="#003d4d">
+  <title>Sonrisa Vital | Clínica odontológica accesible</title>
+  <link rel="help" href="docs/declaracion-accesibilidad.md" title="Declaración de accesibilidad">
+
+  <link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido principal</a>
+  <a class="skip-link" href="#mainNav">Saltar a la navegación</a>
+  <a class="skip-link" href="#agendar">Saltar a agendar cita</a>
+
+  <div class="topbar" aria-label="Información de contacto">
+    <div class="container">
+      <span>Atención odontológica humanizada y accesible</span>
+      <span>
+        <a href="tel:+573001234567" aria-label="Llamar a Sonrisa Vital, 300 123 4567">☎ 300 123 4567</a>
+        &nbsp;|&nbsp;
+        <a href="mailto:citas@sonrisavital.example">citas@sonrisavital.example</a>
+      </span>
+    </div>
+  </div>
+
+  <header>
+    <div class="container nav-wrap">
+      <a class="brand" href="#inicio" aria-label="Sonrisa Vital, ir al inicio">
+        <span class="brand-mark" aria-hidden="true">✚</span>
+        <span>Sonrisa Vital</span>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" type="button"
+              aria-expanded="false" aria-controls="mainNav"
+              aria-label="Abrir menú principal">☰</button>
+
+      <nav class="primary-nav" id="mainNav" aria-label="Navegación principal">
+        <ul>
+          <li><a href="#inicio" aria-current="page">Inicio</a></li>
+          <li class="nav-dropdown">
+            <button id="treatmentsButton" type="button"
+                    aria-expanded="false" aria-controls="treatmentsMenu">
+              Tratamientos <span aria-hidden="true">▾</span>
+            </button>
+            <div class="dropdown-panel" id="treatmentsMenu" hidden>
+              <a href="#servicios">Odontología preventiva</a>
+              <a href="#servicios">Ortodoncia</a>
+              <a href="#servicios">Implantología</a>
+            </div>
+          </li>
+          <li><a href="#equipo">Nuestra clínica</a></li>
+          <li><a href="#preguntas">Preguntas</a></li>
+          <li><a href="#accesibilidad">Accesibilidad</a></li>
+          <li><a class="nav-cta" href="#agendar">Agendar cita</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido" tabindex="-1">
+    <div class="container breadcrumbs">
+      <nav aria-label="Ruta de navegación">
+        <ol>
+          <li><a href="#inicio">Inicio</a></li>
+          <li aria-current="page">Clínica odontológica</li>
+        </ol>
+      </nav>
+    </div>
+
+    <section class="hero" id="inicio" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+        <div>
+          <span class="eyebrow">✓ Atención inclusiva y segura</span>
+          <h1 id="hero-title">Sonrisas saludables, atención para todas las personas</h1>
+          <p class="lead">
+            Odontología integral con tecnología moderna, profesionales cercanos
+            y espacios pensados para una experiencia cómoda y accesible.
+          </p>
+          <div class="button-row">
+            <a class="btn btn-primary" href="#agendar">Solicitar valoración</a>
+            <button class="btn btn-secondary" id="openInfoModal" type="button">
+              Conocer accesibilidad
+            </button>
+          </div>
+          <ul class="trust-list" aria-label="Beneficios principales">
+            <li>Consulta prioritaria</li>
+            <li>Acceso sin barreras</li>
+            <li>Protocolos seguros</li>
+          </ul>
+        </div>
+
+        <figure class="hero-visual decorative-image">
+          <svg viewBox="0 0 560 430" role="img"
+               aria-labelledby="svgTitle svgDesc"
+               width="560" height="430">
+            <title id="svgTitle">Odontóloga atendiendo a una paciente</title>
+            <desc id="svgDesc">Ilustración de una consulta dental tranquila en la clínica Sonrisa Vital.</desc>
+            <rect width="560" height="430" rx="24" fill="#eaf4f2"/>
+            <rect x="55" y="74" width="165" height="270" rx="22" fill="#ffffff"/>
+            <rect x="86" y="104" width="105" height="92" rx="14" fill="#b9ece4"/>
+            <path d="M137 119v63M106 150h62" stroke="#003d4d" stroke-width="12" stroke-linecap="round"/>
+            <rect x="89" y="223" width="95" height="10" rx="5" fill="#9bb3b4"/>
+            <rect x="89" y="249" width="95" height="10" rx="5" fill="#9bb3b4"/>
+            <rect x="89" y="275" width="68" height="10" rx="5" fill="#9bb3b4"/>
+            <ellipse cx="344" cy="320" rx="134" ry="35" fill="#cfdfde"/>
+            <path d="M238 301c19-65 57-108 118-108 50 0 81 38 109 108z" fill="#003d4d"/>
+            <circle cx="370" cy="149" r="44" fill="#c98962"/>
+            <path d="M332 140c4-39 76-58 90 5-18-13-49-18-90-5z" fill="#06242d"/>
+            <path d="M273 294c-24-42-20-84 9-126l30 22c-11 30-15 58 8 87z" fill="#ffffff"/>
+            <circle cx="291" cy="151" r="35" fill="#c98962"/>
+            <path d="M258 146c8-38 63-42 69-4-23-13-44-14-69 4z" fill="#06242d"/>
+            <path d="M275 191c16 18 34 23 55 22l15 55-78-2z" fill="#ffffff"/>
+            <path d="M332 214l-29 30" stroke="#003d4d" stroke-width="8" stroke-linecap="round"/>
+            <path d="M345 208l-26 30" stroke="#003d4d" stroke-width="5" stroke-linecap="round"/>
+            <circle cx="449" cy="85" r="40" fill="#b9ece4"/>
+            <path d="M449 62v46M426 85h46" stroke="#003d4d" stroke-width="9" stroke-linecap="round"/>
+          </svg>
+        </figure>
+      </div>
+    </section>
+
+    <section class="section-alt" id="servicios" aria-labelledby="services-title">
+      <div class="container">
+        <div class="section-heading">
+          <h2 id="services-title">Tratamientos odontológicos</h2>
+          <p>Servicios claros y personalizados para cuidar tu salud oral en cada etapa.</p>
+        </div>
+        <div class="cards">
+          <article class="card">
+            <span class="icon" aria-hidden="true">◉</span>
+            <h3>Valoración preventiva</h3>
+            <p>Limpieza, diagnóstico y plan de cuidado para prevenir complicaciones.</p>
+            <a href="#agendar" aria-label="Agendar valoración preventiva">Agendar servicio</a>
+          </article>
+          <article class="card">
+            <span class="icon" aria-hidden="true">⌁</span>
+            <h3>Ortodoncia</h3>
+            <p>Alineación dental con seguimiento profesional y opciones estéticas.</p>
+            <a href="#agendar" aria-label="Agendar consulta de ortodoncia">Agendar servicio</a>
+          </article>
+          <article class="card">
+            <span class="icon" aria-hidden="true">✦</span>
+            <h3>Estética dental</h3>
+            <p>Diseño de sonrisa y blanqueamiento con valoración responsable.</p>
+            <a href="#agendar" aria-label="Agendar consulta de estética dental">Agendar servicio</a>
+          </article>
+          <article class="card">
+            <span class="icon" aria-hidden="true">＋</span>
+            <h3>Urgencias</h3>
+            <p>Orientación oportuna para dolor, trauma o molestias dentales agudas.</p>
+            <a href="tel:+573001234567" aria-label="Llamar por urgencia odontológica">Llamar ahora</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="equipo" aria-labelledby="clinic-title">
+      <div class="container two-columns">
+        <div>
+          <div class="section-heading">
+            <h2 id="clinic-title">Una clínica diseñada sin barreras</h2>
+            <p>Tu experiencia comienza desde la información y continúa en el consultorio.</p>
+          </div>
+          <ul class="feature-list">
+            <li><span class="check" aria-hidden="true">✓</span><span>Recepción accesible y acompañamiento cuando lo necesites.</span></li>
+            <li><span class="check" aria-hidden="true">✓</span><span>Información en lenguaje claro y alternativas de contacto.</span></li>
+            <li><span class="check" aria-hidden="true">✓</span><span>Horarios flexibles y atención prioritaria para urgencias.</span></li>
+            <li><span class="check" aria-hidden="true">✓</span><span>Página navegable con teclado, lector de pantalla y zoom ampliado.</span></li>
+          </ul>
+        </div>
+
+        <div class="table-scroll" tabindex="0" aria-label="Tabla de horarios, desplazable horizontalmente en pantallas pequeñas">
+          <table>
+            <caption>Horarios de atención por servicio</caption>
+            <thead>
+              <tr>
+                <th scope="col">Servicio</th>
+                <th scope="col">Lunes a viernes</th>
+                <th scope="col">Sábado</th>
+                <th scope="col">Canal</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Valoración</th>
+                <td>7:00 a. m. – 6:00 p. m.</td>
+                <td>8:00 a. m. – 1:00 p. m.</td>
+                <td>Presencial</td>
+              </tr>
+              <tr>
+                <th scope="row">Ortodoncia</th>
+                <td>8:00 a. m. – 5:00 p. m.</td>
+                <td>Con cita</td>
+                <td>Presencial</td>
+              </tr>
+              <tr>
+                <th scope="row">Orientación urgente</th>
+                <td>7:00 a. m. – 7:00 p. m.</td>
+                <td>8:00 a. m. – 3:00 p. m.</td>
+                <td>Teléfono y presencial</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-alt" id="agendar" aria-labelledby="appointment-title">
+      <div class="container two-columns">
+        <div>
+          <div class="section-heading">
+            <h2 id="appointment-title">Agenda tu valoración</h2>
+            <p>
+              Completa el formulario. Los campos marcados con
+              <span class="required" aria-hidden="true">*</span>
+              <span class="sr-only">asterisco</span> son obligatorios.
+            </p>
+          </div>
+          <p>
+            Responderemos por el canal seleccionado para confirmar disponibilidad.
+            No incluyas información médica sensible en el mensaje.
+          </p>
+        </div>
+
+        <form id="appointmentForm" novalidate aria-describedby="privacyNote">
+          <div id="formAlert" class="form-alert" role="alert" tabindex="-1">
+            Revisa los campos marcados antes de enviar tu solicitud.
+          </div>
+
+          <div class="fields">
+            <div class="field">
+              <label for="fullName">Nombre completo <span class="required" aria-hidden="true">*</span></label>
+              <input id="fullName" name="fullName" type="text" autocomplete="name"
+                     required aria-required="true" aria-describedby="fullNameError">
+              <span class="field-error" id="fullNameError">Escribe tu nombre completo.</span>
+            </div>
+
+            <div class="field">
+              <label for="phone">Teléfono <span class="required" aria-hidden="true">*</span></label>
+              <input id="phone" name="phone" type="tel" autocomplete="tel"
+                     inputmode="tel" required aria-required="true"
+                     pattern="[0-9 +()-]{7,20}"
+                     aria-describedby="phoneHint phoneError">
+              <span class="hint" id="phoneHint">Ejemplo: 300 123 4567.</span>
+              <span class="field-error" id="phoneError">Ingresa un teléfono válido.</span>
+            </div>
+
+            <div class="field">
+              <label for="email">Correo electrónico <span class="required" aria-hidden="true">*</span></label>
+              <input id="email" name="email" type="email" autocomplete="email"
+                     required aria-required="true" aria-describedby="emailError">
+              <span class="field-error" id="emailError">Ingresa un correo válido.</span>
+            </div>
+
+            <div class="field">
+              <label for="service">Servicio de interés <span class="required" aria-hidden="true">*</span></label>
+              <select id="service" name="service" required aria-required="true"
+                      aria-describedby="serviceError">
+                <option value="">Selecciona una opción</option>
+                <option value="preventiva">Valoración preventiva</option>
+                <option value="ortodoncia">Ortodoncia</option>
+                <option value="estetica">Estética dental</option>
+                <option value="urgencia">Urgencia odontológica</option>
+              </select>
+              <span class="field-error" id="serviceError">Selecciona un servicio.</span>
+            </div>
+
+            <div class="field">
+              <label for="preferredDate">Fecha preferida <span class="required" aria-hidden="true">*</span></label>
+              <input id="preferredDate" name="preferredDate" type="date" required
+                     aria-required="true" aria-describedby="dateError">
+              <span class="field-error" id="dateError">Selecciona una fecha disponible.</span>
+            </div>
+
+            <div class="field">
+              <label for="contactMethod">Canal de respuesta</label>
+              <select id="contactMethod" name="contactMethod">
+                <option value="telefono">Llamada telefónica</option>
+                <option value="email">Correo electrónico</option>
+                <option value="whatsapp">WhatsApp</option>
+              </select>
+            </div>
+
+            <div class="field full">
+              <label for="message">Mensaje opcional</label>
+              <textarea id="message" name="message" maxlength="400"
+                        aria-describedby="messageHint messageCount"></textarea>
+              <span class="hint" id="messageHint">Evita datos clínicos sensibles.</span>
+              <span class="char-count" id="messageCount" aria-live="polite">0 de 400 caracteres</span>
+            </div>
+
+            <div class="field full">
+              <label>
+                <input id="consent" name="consent" type="checkbox" required
+                       aria-required="true" aria-describedby="consentError">
+                Autorizo el contacto para gestionar mi solicitud conforme a la
+                <a href="#privacidad">política de privacidad</a>
+                <span class="required" aria-hidden="true">*</span>
+              </label>
+              <span class="field-error" id="consentError">Debes autorizar el contacto.</span>
+            </div>
+          </div>
+
+          <p class="hint" id="privacyNote">Tus datos se usarán únicamente para gestionar la cita.</p>
+          <button class="btn btn-primary" type="submit">Enviar solicitud</button>
+        </form>
+      </div>
+    </section>
+
+    <section id="preguntas" aria-labelledby="faq-title">
+      <div class="container">
+        <div class="section-heading">
+          <h2 id="faq-title">Preguntas frecuentes</h2>
+          <p>Respuestas breves para ayudarte a tomar una decisión informada.</p>
+        </div>
+
+        <div class="accordion">
+          <article class="accordion-item">
+            <h3>
+              <button class="accordion-trigger" id="faqTrigger1" type="button"
+                      aria-expanded="false" aria-controls="faqPanel1">
+                ¿La valoración inicial incluye diagnóstico?
+                <span aria-hidden="true">+</span>
+              </button>
+            </h3>
+            <div class="accordion-panel" id="faqPanel1" role="region"
+                 aria-labelledby="faqTrigger1" hidden>
+              Sí. Evaluamos tu salud oral y explicamos las alternativas de tratamiento con lenguaje claro.
+            </div>
+          </article>
+
+          <article class="accordion-item">
+            <h3>
+              <button class="accordion-trigger" id="faqTrigger2" type="button"
+                      aria-expanded="false" aria-controls="faqPanel2">
+                ¿Puedo solicitar ajustes de accesibilidad durante mi cita?
+                <span aria-hidden="true">+</span>
+              </button>
+            </h3>
+            <div class="accordion-panel" id="faqPanel2" role="region"
+                 aria-labelledby="faqTrigger2" hidden>
+              Sí. Puedes informar apoyos de comunicación, movilidad o acompañamiento al confirmar tu cita.
+            </div>
+          </article>
+
+          <article class="accordion-item">
+            <h3>
+              <button class="accordion-trigger" id="faqTrigger3" type="button"
+                      aria-expanded="false" aria-controls="faqPanel3">
+                ¿Atienden urgencias odontológicas?
+                <span aria-hidden="true">+</span>
+              </button>
+            </h3>
+            <div class="accordion-panel" id="faqPanel3" role="region"
+                 aria-labelledby="faqTrigger3" hidden>
+              Contáctanos por teléfono para orientación rápida y asignación según disponibilidad y prioridad.
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-alt" id="accesibilidad" aria-labelledby="a11y-title">
+      <div class="container">
+        <div class="section-heading">
+          <h2 id="a11y-title">Declaración de accesibilidad</h2>
+          <p>Conformidad orientada a WCAG 2.1 nivel AA y marcos de España, Francia y Colombia.</p>
+        </div>
+
+        <div class="accessibility-statement">
+          <ul class="declaration-meta">
+            <li><strong>Estado:</strong> <span>Parcialmente conforme (plantilla en revisión)</span></li>
+            <li><strong>Fecha de revisión:</strong> <time datetime="2026-06-01">1 de junio de 2026</time></li>
+            <li><strong>Estándar:</strong> <span>WCAG 2.1 nivel AA (EN 301 549)</span></li>
+            <li><strong>Contacto:</strong>
+              <a href="mailto:accesibilidad@sonrisavital.example?subject=Reporte%20de%20accesibilidad">
+                accesibilidad@sonrisavital.example
+              </a>
+            </li>
+          </ul>
+          <p>
+            Sonrisa Vital se compromete a hacer accesible su sitio web conforme al Real Decreto
+            1112/2018 y la UNE-EN 301549:2022 (España), al RGAA 4.1 y la loi nº 2005-102
+            (Francia), y a la Resolución 1519 de 2020 del Ministerio TIC (Colombia), además de
+            la Ley 1618 de 2013 sobre inclusión de personas con discapacidad.
+          </p>
+          <p>
+            El sitio incluye estructura semántica, enlaces de salto, navegación por teclado,
+            foco visible, contraste reforzado, formularios etiquetados, mensajes de error
+            vinculados, regiones dinámicas, respeto a <code>prefers-reduced-motion</code>
+            y herramientas opcionales de personalización.
+          </p>
+          <p>
+            <strong>Contenido no accesible conocido:</strong> la síntesis de voz depende del
+            navegador; las ilustraciones decorativas pueden requerir descripción ampliada en
+            futuras versiones; la evaluación con lectores de pantalla debe repetirse tras cada
+            despliegue con contenido definitivo.
+          </p>
+          <p>
+            <strong>Preparación de la declaración:</strong> autoevaluación técnica con WAVE,
+            TAW, Lighthouse y pruebas manuales con teclado, zoom al 200&nbsp;% y lector de pantalla.
+          </p>
+        </div>
+
+        <div class="compliance-grid" aria-label="Marcos normativos por país">
+          <article>
+            <h3 lang="es">España</h3>
+            <p>RD 1112/2018, Ley 11/2007 y UNE-EN 301549:2022. Reclamaciones ante el organismo competente o la unidad de accesibilidad del responsable del sitio.</p>
+          </article>
+          <article>
+            <h3 lang="fr">France</h3>
+            <p>RGAA 4.1 et loi nº 2005-102. Signalement des obstacles : contact ci-dessus. Recours : <a href="https://formulaire.defenseurdesdroits.fr/" hreflang="fr" rel="noopener noreferrer">Défenseur des droits</a> (lien externo).</p>
+          </article>
+          <article>
+            <h3 lang="es-CO">Colombia</h3>
+            <p>Resolución 1519 de 2020 (MinTIC), Ley 1581 de 2012 (datos) y Ley 1618 de 2013. Quejas ante la entidad o mecanismos de la Superintendencia de Industria y Comercio.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="mapa-sitio" aria-labelledby="sitemap-title">
+      <div class="container">
+        <div class="section-heading">
+          <h2 id="sitemap-title">Mapa del sitio</h2>
+          <p>Índice de todas las secciones para facilitar la orientación (criterio RGAA 13.2).</p>
+        </div>
+        <nav class="legal-block" aria-label="Mapa del sitio">
+          <ul class="sitemap-list">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#servicios">Tratamientos</a></li>
+            <li><a href="#equipo">Nuestra clínica</a></li>
+            <li><a href="#agendar">Agendar cita</a></li>
+            <li><a href="#preguntas">Preguntas frecuentes</a></li>
+            <li><a href="#accesibilidad">Declaración de accesibilidad</a></li>
+            <li><a href="#privacidad">Política de privacidad</a></li>
+            <li><a href="#aviso-legal">Aviso legal</a></li>
+          </ul>
+        </nav>
+      </div>
+    </section>
+
+    <section class="section-alt" id="privacidad" aria-labelledby="privacy-title">
+      <div class="container">
+        <div class="section-heading">
+          <h2 id="privacy-title">Política de privacidad y datos</h2>
+          <p>Tratamiento de datos conforme a RGPD (UE), LOPDGDD (España) y Ley 1581 de 2012 (Colombia).</p>
+        </div>
+        <div class="legal-block">
+          <p><strong>Responsable:</strong> Sonrisa Vital — Cúcuta, Colombia.</p>
+          <p><strong>Finalidad:</strong> gestionar solicitudes de cita y contacto solicitado por la persona usuaria.</p>
+          <p><strong>Base legal:</strong> consentimiento expreso al enviar el formulario y ejecución de medidas precontractuales.</p>
+          <p><strong>Datos tratados:</strong> nombre, teléfono, correo, servicio, fecha preferida y mensaje opcional. No solicites historial clínico por este canal.</p>
+          <p><strong>Conservación:</strong> el tiempo necesario para la gestión de la cita y obligaciones legales aplicables.</p>
+          <p><strong>Derechos:</strong> acceso, rectificación, supresión, oposición, limitación y portabilidad (RGPD); Habeas Data en Colombia. Escríbenos a <a href="mailto:privacidad@sonrisavital.example">privacidad@sonrisavital.example</a>.</p>
+          <p><strong>Cookies:</strong> este sitio estático no usa cookies de seguimiento. Solo se almacenan preferencias de accesibilidad en el dispositivo (<code>localStorage</code>) si las activas.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="aviso-legal" aria-labelledby="legal-title">
+      <div class="container">
+        <div class="section-heading">
+          <h2 id="legal-title">Aviso legal</h2>
+        </div>
+        <div class="legal-block">
+          <p>Los contenidos tienen carácter informativo y no sustituyen el criterio profesional odontológico.</p>
+          <p>Marca y denominación «Sonrisa Vital» son ficticias para fines académicos de usabilidad y accesibilidad.</p>
+          <p>Documentación ampliada en el repositorio: <code>docs/declaracion-accesibilidad.md</code> y <code>docs/normativa-referencias.md</code>.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer aria-label="Pie de página">
+    <div class="container footer-grid">
+      <div>
+        <strong>Sonrisa Vital</strong>
+        <p>Odontología integral con atención clara, humana y accesible.</p>
+      </div>
+      <div>
+        <strong>Contacto</strong>
+        <ul>
+          <li><a href="tel:+573001234567">300 123 4567</a></li>
+          <li><a href="mailto:citas@sonrisavital.example">citas@sonrisavital.example</a></li>
+          <li>Cúcuta, Colombia</li>
+        </ul>
+      </div>
+      <div>
+        <strong>Enlaces</strong>
+        <ul>
+          <li><a href="#mapa-sitio">Mapa del sitio</a></li>
+          <li><a href="#accesibilidad">Accesibilidad</a></li>
+          <li><a href="#privacidad">Privacidad</a></li>
+          <li><a href="#aviso-legal">Aviso legal</a></li>
+          <li><a href="#agendar">Agendar cita</a></li>
+          <li><a href="#preguntas">Preguntas frecuentes</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Widget complementario; la accesibilidad nativa existe sin activarlo. -->
+  <button class="a11y-launcher" id="a11yLauncher" type="button"
+          aria-expanded="false" aria-controls="a11yPanel"
+          aria-label="Abrir herramientas de accesibilidad">♿</button>
+
+  <aside class="a11y-panel" id="a11yPanel" aria-labelledby="a11yPanelTitle" hidden>
+    <div class="a11y-header">
+      <h2 id="a11yPanelTitle">Accesibilidad</h2>
+      <button class="icon-button" id="closeA11y" type="button" aria-label="Cerrar herramientas">✕</button>
+    </div>
+
+    <p class="hint">Personaliza la visualización y asistencia de lectura.</p>
+
+    <div class="text-size-row" aria-label="Cambiar tamaño del texto">
+      <button id="fontDecrease" type="button" aria-label="Reducir tamaño del texto">A−</button>
+      <button id="fontReset" type="button" aria-label="Restablecer tamaño del texto">A</button>
+      <button id="fontIncrease" type="button" aria-label="Aumentar tamaño del texto">A+</button>
+    </div>
+
+    <div class="a11y-controls" aria-label="Opciones visuales">
+      <button type="button" data-toggle="high-contrast" aria-pressed="false">Alto contraste</button>
+      <button type="button" data-theme-toggle aria-pressed="false">Modo oscuro</button>
+      <button type="button" data-toggle="grayscale" aria-pressed="false">Escala de grises</button>
+      <button type="button" data-toggle="pause-motion" aria-pressed="false">Pausar animación</button>
+      <button type="button" data-toggle="focus-strong" aria-pressed="false">Foco destacado</button>
+      <button type="button" data-toggle="guide-enabled" aria-pressed="false">Guía de lectura</button>
+      <button type="button" data-toggle="readable-font" aria-pressed="false">Fuente legible</button>
+      <button type="button" data-toggle="wide-spacing" aria-pressed="false">Espaciado</button>
+      <button type="button" data-toggle="hide-images" aria-pressed="false">Ocultar imágenes</button>
+      <button type="button" data-toggle="big-cursor" aria-pressed="false">Cursor grande</button>
+      <button type="button" id="speakPage" aria-pressed="false">Leer contenido</button>
+      <button type="button" id="keyboardHelp">Atajos de teclado</button>
+    </div>
+
+    <div class="profile-buttons" aria-label="Perfiles rápidos">
+      <button type="button" data-profile="cognitive">Perfil cognitivo: lectura clara</button>
+      <button type="button" data-profile="lowVision">Perfil baja visión: contraste y tamaño</button>
+      <button type="button" data-profile="motor">Perfil motriz: foco y cursor</button>
+    </div>
+
+    <button class="reset-button" id="resetAccessibility" type="button">Restablecer ajustes</button>
+  </aside>
+
+  <div class="reading-guide" id="readingGuide" aria-hidden="true"></div>
+
+  <dialog id="infoModal" aria-labelledby="modalTitle" aria-describedby="modalDescription">
+    <div class="dialog-content">
+      <div class="dialog-head">
+        <div>
+          <h2 id="modalTitle">Accesibilidad en Sonrisa Vital</h2>
+          <p id="modalDescription">
+            Puedes recorrer toda la página con teclado, ampliar el texto,
+            activar alto contraste, modo oscuro o guía de lectura.
+          </p>
+        </div>
+        <button class="icon-button" id="closeInfoModal" type="button" aria-label="Cerrar ventana">✕</button>
+      </div>
+      <p>
+        Teclas útiles: <kbd>Tab</kbd> para avanzar, <kbd>Mayús + Tab</kbd> para retroceder
+        y <kbd>Esc</kbd> para cerrar ventanas o menús.
+      </p>
+      <button class="btn btn-primary" id="modalAccept" type="button">Entendido</button>
+    </div>
+  </dialog>
+
+  <div class="toast" id="toast" role="status" aria-live="polite" aria-atomic="true" hidden></div>
+  <div class="sr-only" id="liveRegion" aria-live="polite" aria-atomic="true"></div>
+
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>
