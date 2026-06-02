@@ -185,7 +185,11 @@ Documentación detallada: [`docs/declaracion-accesibilidad.md`](docs/declaracion
 
 ```
 usabilidadyaccesibilidad/
+├── .github/
+│   └── workflows/
+│       └── deploy-pages.yml        # CI/CD → GitHub Pages
 ├── index.html                      # Página principal (HTML semántico)
+├── .nojekyll                       # Evita procesamiento Jekyll en Pages
 ├── assets/
 │   ├── css/
 │   │   └── main.css                # Sistema de diseño y estilos accesibles
